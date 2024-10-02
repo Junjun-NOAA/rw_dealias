@@ -1,0 +1,5 @@
+# The fortran modules provided by this target.
+provides
+ kinds.mod
+ module_map_utils.mod
+ module_time.mod

@@ -1,0 +1,9 @@
+&setup
+  idate=YYYYMMDDHH,
+  if_dealiasing=.true.,
+  if_use_kbrw=.true.,
+  if_save_bkrw=.true.,
+  if_use_vad=.true.,
+  if_use_local=.true.,
+  bkfile="/mnt/lfs4/BMC/rtwbl/mhu/wcoss/nco/com/hrrr/prod/hrrr.YYYYMMDD/conus/BACKGROUND",
+/

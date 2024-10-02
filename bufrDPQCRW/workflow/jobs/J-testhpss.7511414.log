@@ -1,0 +1,42 @@
++ module load hpss
++ /apps/lmod/lmod/libexec/lmod bash load hpss
++ eval LOADEDMODULES='ncl/6.6.2:hpss;' export 'LOADEDMODULES;' __LMOD_REF_COUNT_MODULEPATH='/etc/scl/modulefiles:2\;/apps/lmod/lmod/modulefiles/Core:1\;/apps/modules/modulefiles/Linux:1\;/apps/modules/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' MODULEPATH='/etc/scl/modulefiles:/apps/lmod/lmod/modulefiles/Core:/apps/modules/modulefiles/Linux:/apps/modules/modulefiles;' export 'MODULEPATH;' __LMOD_REF_COUNT_PATH='/apps/slurm/archive/bin:2\;/apps/slurm/default/bin:2\;/apps/slurm/default/sbin:2\;/apps/ncl/6.6.2-gcc-13.2.0/bin:1\;.:1\;/home/Junjun.Hu/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/apps/local/bin:1\;/apps/local/sbin:1\;/apps/bin:1\;/apps/hpss:2;' export '__LMOD_REF_COUNT_PATH;' PATH='/apps/slurm/archive/bin:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/ncl/6.6.2-gcc-13.2.0/bin:.:/home/Junjun.Hu/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/apps/local/bin:/apps/local/sbin:/apps/bin:/apps/hpss;' export 'PATH;' _LMFILES_='/apps/modules/modulefiles/ncl/6.6.2:/apps/modules/modulefiles/hpss;' export '_LMFILES_;' _ModuleTable001_='X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtocHNzPXtbImZuIl09Ii9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMvaHBzcyIsWyJmdWxsTmFtZSJdPSJocHNzIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iaHBzcyIsWyJ3ViJdPSJNLip6ZmluYWwiLH0sbmNsPXtbImZuIl09Ii9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMvbmNsLzYuNi4yIixbImZ1bGxOYW1lIl09Im5jbC82LjYuMiIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJd;' export '_ModuleTable001_;' _ModuleTable002_='PTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im5jbCIsWyJ3ViJdPSIwMDAwMDAwMDYuMDAwMDAwMDA2LjAwMDAwMDAwMi4qemZpbmFsIix9LH0sbXBhdGhBPXsiL2V0Yy9zY2wvbW9kdWxlZmlsZXMiLCIvZXRjL3NjbC9tb2R1bGVmaWxlcyIsIi9hcHBzL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL2FwcHMvbW9kdWxlcy9tb2R1bGVmaWxlcy9MaW51eCIsIi9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2V0Yy9zY2wvbW9kdWxlZmlsZXM6L2FwcHMvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L2FwcHMvbW9kdWxlcy9tb2R1bGVmaWxlcy9MaW51eDovYXBwcy9tb2R1bGVzL21vZHVsZWZpbGVzIix9;' export '_ModuleTable002_;' _ModuleTable_Sz_='2;' export '_ModuleTable_Sz_;'
++ LOADEDMODULES=ncl/6.6.2:hpss
++ export LOADEDMODULES
++ __LMOD_REF_COUNT_MODULEPATH='/etc/scl/modulefiles:2;/apps/lmod/lmod/modulefiles/Core:1;/apps/modules/modulefiles/Linux:1;/apps/modules/modulefiles:1'
++ export __LMOD_REF_COUNT_MODULEPATH
++ MODULEPATH=/etc/scl/modulefiles:/apps/lmod/lmod/modulefiles/Core:/apps/modules/modulefiles/Linux:/apps/modules/modulefiles
++ export MODULEPATH
++ __LMOD_REF_COUNT_PATH='/apps/slurm/archive/bin:2;/apps/slurm/default/bin:2;/apps/slurm/default/sbin:2;/apps/ncl/6.6.2-gcc-13.2.0/bin:1;.:1;/home/Junjun.Hu/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/apps/local/bin:1;/apps/local/sbin:1;/apps/bin:1;/apps/hpss:2'
++ export __LMOD_REF_COUNT_PATH
++ PATH=/apps/slurm/archive/bin:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/ncl/6.6.2-gcc-13.2.0/bin:.:/home/Junjun.Hu/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/apps/local/bin:/apps/local/sbin:/apps/bin:/apps/hpss
++ export PATH
++ _LMFILES_=/apps/modules/modulefiles/ncl/6.6.2:/apps/modules/modulefiles/hpss
++ export _LMFILES_
++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtocHNzPXtbImZuIl09Ii9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMvaHBzcyIsWyJmdWxsTmFtZSJdPSJocHNzIixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iaHBzcyIsWyJ3ViJdPSJNLip6ZmluYWwiLH0sbmNsPXtbImZuIl09Ii9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMvbmNsLzYuNi4yIixbImZ1bGxOYW1lIl09Im5jbC82LjYuMiIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJd
++ export _ModuleTable001_
++ _ModuleTable002_=PTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im5jbCIsWyJ3ViJdPSIwMDAwMDAwMDYuMDAwMDAwMDA2LjAwMDAwMDAwMi4qemZpbmFsIix9LH0sbXBhdGhBPXsiL2V0Yy9zY2wvbW9kdWxlZmlsZXMiLCIvZXRjL3NjbC9tb2R1bGVmaWxlcyIsIi9hcHBzL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL2FwcHMvbW9kdWxlcy9tb2R1bGVmaWxlcy9MaW51eCIsIi9hcHBzL21vZHVsZXMvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2V0Yy9zY2wvbW9kdWxlZmlsZXM6L2FwcHMvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L2FwcHMvbW9kdWxlcy9tb2R1bGVmaWxlcy9MaW51eDovYXBwcy9tb2R1bGVzL21vZHVsZWZpbGVzIix9
++ export _ModuleTable002_
++ _ModuleTable_Sz_=2
++ export _ModuleTable_Sz_
++ : -s sh
++ eval
++ hsi mkdir -p /ESRL/BMC/wrfruc/5year/jjhu/DealiasedVelocityDPQC/20240805
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+******************************************************************
+*   Welcome to the NESCC High Performance Storage System         *
+*                                                                *
+*   Current HPSS version: 9.3.10                                 * 
+*                                                                * 
+*       Please Submit Helpdesk Request to                        *
+*        rdhpcs.hpss.help@noaa.gov                               *
+*                                                                *
+******************************************************************
+Username: Junjun.Hu  UID: 20527  Acct: 20527(20527) Copies: 1 COS: 0 Firewall: off [hsi.9.3.0.p0 Wed Feb 21 15:57:14 UTC 2024] 
+mkdir: /ESRL/BMC/wrfruc/5year/jjhu/DealiasedVelocityDPQC/20240805
++ exit 0
+_______________________________________________________________
+Start Epilog on node fe5 for job 7511414 :: Mon Aug  5 21:40:16 UTC 2024
+Job 7511414 finished for user Junjun.Hu in partition service with exit code 0:0
+_______________________________________________________________
+End Epilogue Mon Aug  5 21:40:16 UTC 2024

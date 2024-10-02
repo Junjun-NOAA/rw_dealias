@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libncio.a CMakeFiles/ncio.dir/module_ncio.f90.o
+/usr/bin/ranlib ../lib/libncio.a

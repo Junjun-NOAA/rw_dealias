@@ -1,0 +1,6 @@
+# The fortran modules provided by this target.
+provides
+ module_background.mod
+ module_radar_station_config.mod
+ module_rw_dealiasing.mod
+ module_rw_dpqc.mod

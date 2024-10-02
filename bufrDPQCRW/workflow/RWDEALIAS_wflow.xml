@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE workflow [
+
+<!--
+Parameters needed by the job scheduler.
+-->
+<!ENTITY ACCOUNT         "rtwrfruc">
+<!ENTITY SCHED           "slurm">
+<!ENTITY QUEUE_DEFAULT   "rth">
+<!ENTITY RRFS_RESERVE  "--reservation=rrfsens">
+
+<!--
+define resources used for each tasks
+-->
+<!ENTITY NODESIZE    "<nodesize>40</nodesize>">
+<!ENTITY RESOURCES   "<cores>320</cores>">
+
+<!--
+Workflow task names.
+-->
+<!ENTITY RW_DEALIASING   "rw_dealias">
+<!ENTITY TAG   "DPQC">
+
+<!--
+scripts names.
+-->
+<!ENTITY RUN_DEALIAS   "test.ksh">
+
+
+<!--
+Reservations specify the queue/partition and account to use for a given task.
+-->
+<!ENTITY RSRV_DEFAULT "<account>&ACCOUNT;</account><queue>&QUEUE_DEFAULT;</queue><partition>kjet</partition><native>&RRFS_RESERVE;</native>">
+
+<!--
+Directories and files.
+-->
+<!ENTITY JOBSDIR                  "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/workflow/jobs">
+<!ENTITY LOGDIR                   "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/logs/log.@Y@m@d/@H">
+<!ENTITY WORKDIR_BASE             "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/work">
+<!ENTITY OUTDIR_BASE              "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/dealiased">
+<!ENTITY DPQCDIR_BASE              "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/dpqc">
+<!ENTITY BKRWDIR_BASE              "/lfs5/BMC/wrfruc/jjhu/rw_dealiasing/bkrw">
+]>
+
+<workflow realtime="F" scheduler="&SCHED;" cyclethrottle="24" cyclelifespan="01:00:00:00">
+
+  <log><cyclestr>&LOGDIR;/dealias_wflow.log</cyclestr></log>
+
+  <cycledef group="hourly">202406061400 202406061400 01:00:00</cycledef>
+   
+  <task name="&RW_DEALIASING;" cycledefs="hourly" maxtries="3">
+
+    &RSRV_DEFAULT;
+
+    <command>"&JOBSDIR;/&RUN_DEALIAS;"</command>
+
+    &RESOURCES;
+    <walltime>01:00:00</walltime>
+    &NODESIZE;
+    <jobname>&TAG;_&RW_DEALIASING;</jobname>
+    <join><cyclestr>&LOGDIR;/&RW_DEALIASING;_@Y@m@d@H.log</cyclestr></join>
+
+    <envar><name>CDATE</name><value><cyclestr>@Y@m@d@H</cyclestr></value></envar>
+    <envar><name>PDATE</name><value><cyclestr offset="-1:00:00">@Y@m@d@H</cyclestr></value></envar>
+    <envar><name>WORKDIR</name><value><cyclestr>&WORKDIR_BASE;/@Y@m@d/@H</cyclestr></value></envar>
+    <envar><name>OUTDIR</name><value><cyclestr>&OUTDIR_BASE;/@Y@m@d;</cyclestr></value></envar>
+    <envar><name>DPQCDIR</name><value><cyclestr>&DPQCDIR_BASE;/@Y@m@d;</cyclestr></value></envar>
+    <envar><name>BKRWDIR</name><value><cyclestr>&BKRWDIR_BASE;/@Y@m@d;</cyclestr></value></envar>
+
+    <dependency>
+      <datadep age="00:00:02:00"><cyclestr>/mnt/lfs4/BMC/rtwbl/mhu/wcoss/nco/com/hrrr/prod/hrrr.@Y@m@d/conus/hrrr.t@Hz.wrf_inout</cyclestr></datadep>
+    </dependency>
+
+  </task>
+
+</workflow>

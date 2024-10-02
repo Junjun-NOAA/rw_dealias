@@ -1,0 +1,1 @@
+/apps/oneapi/compiler/2022.0.2/linux/bin/intel64/ifort -O3 CMakeFiles/testlib.exe.dir/testlib.f90.o -o ../bin/testlib.exe  ../lib/libbase.a ../lib/libncio.a -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib/ -lnetcdf -lnetcdff 

@@ -1,0 +1,2 @@
+srun: error: required parameter -A <account> not specified
+srun: error: Unable to allocate resources: Invalid account or account/partition combination specified

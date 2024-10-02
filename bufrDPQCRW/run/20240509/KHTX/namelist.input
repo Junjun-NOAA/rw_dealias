@@ -1,0 +1,9 @@
+&setup
+  idate=2024050903,
+  if_dealiasing=.true.,
+  if_use_kbrw=.true.,
+  if_save_bkrw=.true.,
+  if_use_vad=.true.,
+  if_use_local=.true.,
+  bkfile="/lfs4/BMC/wrfruc/jjhu/vr/data/RAP_HRRR/20240509/hrrr.t03z.wrf_inout",
+/
