@@ -29,6 +29,5 @@
   sub_l2rwbufr_nssl_dealiasing_*, after dealiasing
   * is the node number
 
-4. The GSI needs to turn off VAD QC.
 
 
